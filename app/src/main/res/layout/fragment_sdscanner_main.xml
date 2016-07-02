@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <!-- Controls for starting and stopping the scan -->
+        <Button
+            android:id="@+id/fragment_sdscanner_button_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/start_button_label"/>
+
+        <Button
+            android:id="@+id/fragment_sdscanner_button_stop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_button_label"/>
+
+    </LinearLayout>
+
+    <!-- Display scan progress -->
+    <TextView
+        android:id="@+id/fragment_sdcanner_progress_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/scan_status_label"/>
+
+    <ProgressBar
+        android:id="@+id/fragment_sdscanner_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <!-- Display results -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/largest_files_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/empty_largest_files_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"/>
+
+            <TextView
+                android:id="@+id/largest_files_item0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/largest_files_item9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_list_text"
+                android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/common_extensions_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" >
+
+            <TextView
+            android:id="@+id/empty_common_extensions_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"/>
+
+        <TextView
+            android:id="@+id/common_extensions_item0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/common_extensions_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/common_extensions_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/common_extensions_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/common_extensions_item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_text"
+            android:visibility="gone"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/average_filesize_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/empty_average_size_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty_list_text"/>
+
+                <TextView
+                    android:id="@+id/average_size_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Button for sharing results -->
+    <Button
+        android:id="@+id/fragment_sdscanner_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_results_button_label"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_gravity="center|bottom"
+        android:enabled="false" />
+
+</LinearLayout>

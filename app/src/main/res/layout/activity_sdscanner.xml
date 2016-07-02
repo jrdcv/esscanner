@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Potentially overkill. This is a simple app but using a fragment
+     allows us to do everything in the fragment and retain its state,
+     which greatly simplifies keeping things correct through configuration
+     changes.
+       Also, see comments in the source, electing not to use Lists in
+     the fragment seemed a reasonable choice but meant we need an
+     all-encompassing ScrollView here. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/sdcanner_activity_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</ScrollView>

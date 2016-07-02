@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ESScanner</string>
+
+    <!-- Explain what we're doing -->
+    <string name="scan_description_label">Scan external storage for files:</string>
+
+    <!-- Buttons to start and stop scanning -->
+    <string name="start_button_label">Start Scanning</string>
+    <string name="stop_button_label">Stop Scanning</string>
+
+    <!-- Show current scan status -->
+    <string name="scan_status_label">Scan progress:  %1$d%% </string>
+    <string name="scan_scanning_label">Scanning: </string>
+
+    <!-- In certain cases we may not be able to read external storage -->
+    <string name="error_dialog_title">Doh!</string>
+    <string name="error_dialog_text">It looks like we don\'t have permission to read external storage!</string>string>
+
+    <!-- For showing scan results -->
+    <string name="largest_files_label">Largest files:</string>
+    <string name="common_extensions_label">Common extensions:</string>
+    <string name="average_filesize_label">Average file size:</string>
+    <string name="empty_list_text">Nothing to show yet</string>
+
+    <!-- For sharing results -->
+    <string name="share_results_button_label">Share Results</string>
+    <string name="share_results_chooser_text">Send scan results via:</string>
+    <string name="share_results_title">My scan result</string>
+    <string name="share_results_1">Scan result:\n\nLargest files:\n</string>
+    <string name="share_results_2">\nCommon file extensions:\n</string>
+    <string name="share_results_3">\nAverage file size: </string>
+
+    <!-- For notification -->
+    <string name="notification_title">Storage scan</string>
+    <string name="notification_text">Scanning external storage files</string>
+
+</resources>
